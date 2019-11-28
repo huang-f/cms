@@ -15,8 +15,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
-    @EnableWebSecurity
-    public class SecurityConfig  extends WebSecurityConfigurerAdapter {
+@EnableWebSecurity
+public class SecurityConfig  extends WebSecurityConfigurerAdapter {
     @Autowired
     @Qualifier("userDetailServiceImpl")
     private UserDetailsService userDetailService;
