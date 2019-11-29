@@ -1,6 +1,7 @@
 package com.briup.cms.service;
 
 import com.briup.cms.bean.Category;
+import com.briup.cms.bean.ex.CategoryEX;
 import com.briup.cms.exception.CustomerException;
 
 import java.util.List;
@@ -15,4 +16,5 @@ public interface ICategoryService {
 
     List<Category> findAll() throws CustomerException;
 
+    List<CategoryEX> findAllCategoryEX() throws CustomerException;
 }
